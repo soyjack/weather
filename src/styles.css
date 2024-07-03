@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weather-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.weather-grid .weather-card {
+    margin: auto;
+    width: 80%;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    position: absolute;
+    top: 65vh;
+    left: 10vw;
+    background-color: skyblue;
+    padding: 15px;
+    border-radius: 18px;
+    width: 80%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: x-large;
+}
+
+.drop-down {
+    position: absolute;
+    top: 85vh;
+    left: 10vw;
+    background-color: skyblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #333;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.weather-card img {
+    width: 100%;
+    height: auto;
+}
+
+.imgBan {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 0% 50%);
+}
+
+.headerTitle {
+    font-size: 60px;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button.active {
+    background-color: #555;
+}
+
+.favorite-button {
+    background-color: #f44336;
+    /* Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.favorite-button:hover {
+    color: #d32f2f;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navigation input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.navigation input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+.navigation button {
+    background-color: #ffffff;
+    border: none;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: #f2f2f2;
+}
+
+.drop-down select {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #4CAF50;
+}
+
+.drop-down select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+}
